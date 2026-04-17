@@ -42,14 +42,11 @@ const About = () => {
             </Grid>
             <Grid item xs={12} md={8}>
               <Typography variant="body1" paragraph>
-                I'm a passionate Full Stack Developer with a strong foundation in modern web technologies.
-                My journey in software development started with a curiosity about how things work on the web,
-                and it has evolved into a professional career building robust and scalable applications.
+                I’m a passionate Data and Backend Engineer with a strong foundation in building scalable data platforms, 
+                distributed systems, and modern web applications. My journey in software development started with a curiosity about how systems and data work together, and it has evolved into a career designing reliable, high-performance backend services and data-driven applications.
               </Typography>
               <Typography variant="body1" paragraph>
-                I specialize in creating responsive and intuitive user interfaces while also handling
-                complex backend logic. My approach to development focuses on writing clean, maintainable
-                code that solves real-world problems.
+                I specialize in building scalable backend systems and data-driven applications, while also creating responsive and intuitive user interfaces. My approach focuses on writing clean, maintainable code that solves real-world problems.
               </Typography>
     
               <Typography variant="h6" gutterBottom>

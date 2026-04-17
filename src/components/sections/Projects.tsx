@@ -11,6 +11,27 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Insights",
+    description: `A cloud-based platform offering real-time insights and predictive analytics to improve retail operations, enhance decision-making, and optimize store performance.
+          Provides actionable dashboards, transaction analysis, and sales performance metrics to help retailers identify trends and opportunities.
+          Integrates seamlessly with GCP services, BigQuery, and Dataflow pipelines to process high-volume transactional data for enterprise clients.`,
+    roles: [
+        'Designed and developed scalable Apache Beam pipelines on Dataflow to process high-volume TLog data (Sales, Tenders, Transactions, Returns), enabling efficient handling of thousands of daily transactions and loading results into BigQuery',
+        
+        'Built serverless data ingestion workflows using Cloud Functions and Cloud Scheduler to automate data extraction from upstream services and load it into downstream data platforms.',
+
+        'Optimized performance-critical data processing functions by 80% using parallel execution (ThreadPoolExecutor), significantly reducing latency for external API calls.',
+
+        'Implemented BigQuery MERGE operations to maintain clean, consistent, and up-to-date datasets for analytics and reporting',
+
+        'Developed data visualization integrations using Looker and JavaScript to enable business stakeholders to derive actionable insights from processed data',
+
+        'Recognized as Best Distinguished Award Winner – 2022 for innovation and technical excellence in front-end R&D.'
+    ], 
+    image: "https://images.unsplash.com/photo-1728044849277-9cb3cd94e729?ixlib=rb-1.2.1&auto=format&fit=crop&w=2050&q=80",
+    technologies: ["Java", "React", "Javascript", "GCP Dataflow", "Cloud Functions", "Big Query"],
+  },
+  {
     title: "SWIC Portal",
     description: `SWIC (Special Supplemental Nutrition Program for Women, Infants, and Children) is a US federally funded program supporting nutritional needs for eligible women and children. 
     Developed the SWIC Portal, a transaction recording and claim generation platform that streamlines subsidy reimbursements for WIC-eligible purchases. The application captures transaction data from certified retailers, generates claim files based on subsidy structures, and facilitates seamless claim submissions to government agencies. It also handles claim corrections and resubmissions for accurate reimbursement processing.`,
@@ -29,27 +50,6 @@ const projects: Project[] = [
 
       'Contributed to a 10% increase in team revenue by delivering a scalable, client-centric solution with production-grade stability and maintainability.'
     ]
-  },
-  {
-    title: "Insights",
-    description: `A cloud-based platform offering real-time insights and predictive analytics to improve retail operations, enhance decision-making, and optimize store performance.
-          Provides actionable dashboards, transaction analysis, and sales performance metrics to help retailers identify trends and opportunities.
-          Integrates seamlessly with GCP services, BigQuery, and Dataflow pipelines to process high-volume transactional data for enterprise clients.`,
-    roles: [
-        'Designed and developed robust Apache Beam pipelines using Dataflow to process TLog data including Sales, Tenders, Transactions, and Returns, enabling seamless handling of thousands of transactions daily and storing results efficiently in BigQuery',
-        
-        'Created Cloud Functions integrated with Google Scheduler to automate data fetching from services like Site Service and posting consumer data to CDM on a scheduled basis.',
-
-        'Optimized a performance-critical Cloud Function by 80% using CompletableFuture, drastically reducing response time for parallel API calls.',
-
-        'Leveraged BigQuery MERGE queries to update and maintain clean datasets with high consistency.',
-
-        'Built custom React.js components for Looker (Google’s Data Visualization tool), driving meaningful visual insights for business stakeholders.',
-
-        'Recognized as Best Distinguished Award Winner – 2022 for innovation and technical excellence in front-end R&D.'
-    ], 
-    image: "https://images.unsplash.com/photo-1728044849277-9cb3cd94e729?ixlib=rb-1.2.1&auto=format&fit=crop&w=2050&q=80",
-    technologies: ["Java", "React", "Javascript", "GCP Dataflow", "Cloud Functions", "Big Query"],
   }
 ];
 
